@@ -1,0 +1,67 @@
+// body, html, #app, .layout {
+//   height: 100%;
+// }
+body {
+  background: $body-bg;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  color: $body-color;
+  font-size: 0.9rem;
+}
+*:focus {
+  outline: none;
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contain {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  transition: background-color 0.4s;
+  box-shadow: 0px 0px 4px #e4e8f1;
+}
+
+.page {
+  height: 100%;
+  overflow: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.slide-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  transition: all 0.2s ease;
+  z-index: 5;
+  &__header {
+    height: 50px;
+    background: #2b2b2b;
+    color: #fff;
+    position: relative;
+  }
+  &__body {
+    height: 100%;
+    overflow: auto;
+  }
+  &__back {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+

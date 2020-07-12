@@ -1,0 +1,31 @@
+#bottomNav {
+  padding: 0.875rem 1.5rem;
+  background: $dark;
+  color: #fff;
+}
+
+#mainHeader {
+  // height: 55px;
+  background: $dark;
+  // color: #fff;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  .logo {
+    // position: absolute;
+    // left: 50%;
+    // top: 10px;
+    // transform: translateX(-50%);
+    img {
+      height: 40px;
+      
+    }
+  }
+}
+
+.page-main-header {
+  height: 50px;
+  background: $dark;
+  color: #fff;
+}

@@ -1,0 +1,58 @@
+.rider-card {
+  transition: opacity 0.6s, transform 0.6s;
+  cursor: pointer;
+  &__content {
+    height: 70px;
+  }
+  &__plate {
+    width: 20%;
+    min-width: 56px;
+    img {
+      width: 56px;
+      margin: auto;
+    }
+    span {
+      position: absolute;
+      top: 46%;
+      left: 48.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__add-icon {
+    font-size: 1.1rem;
+  }
+  &.card {
+    &:focus {
+      background-color: lighten($body-bg, 2%);
+    }
+  }
+}
+
+.rider-plate-number {
+  font-weight: 800;
+  font-size: 1.2875rem;
+  font-style: italic;
+  font-family: 'Kanit', sans-serif;
+}
+
+.rider-panel {
+  background: #f7f7f7;
+  .slide-panel__body {
+    height: calc(100% - 50px);
+    overflow: auto;
+  }
+  &__filters {
+    height: 30px;
+  }
+}
+
+
+.rider-selected-enter, .rider-selected-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.rider-selected-leave-active {
+  position: absolute;
+  right: 0;
+  left: 0;
+}

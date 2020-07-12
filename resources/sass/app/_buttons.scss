@@ -1,0 +1,31 @@
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.btn {
+  padding: 0.625rem 1.75rem;
+  border-radius: 0;
+  font-size: 1rem;
+  transition: all 0.2s;
+  &.loading {
+    span {
+      &:not(.button-loader) {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+.btn-green {
+  background: $green;
+  color: #fff;
+  &:hover {
+    background: darken($green, 3%);
+  }
+}
+.btn-gray {
+  background-color: $body-bg;
+  &:hover {
+    background: darken($body-bg, 2%);
+  }
+}

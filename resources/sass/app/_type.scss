@@ -1,0 +1,15 @@
+.text-green {
+  color: $green;
+}
+
+.text-light {
+  color: lighten($body-color, 50%);
+}
+
+.text-error {
+  color: $red;
+}
+
+.text-smaller {
+  font-size: 0.8rem;
+}
